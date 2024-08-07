@@ -168,15 +168,15 @@ def prepare_data_for_qconfig_assignments_LLaMA(
 
 FILE_NAMES_DICT = {
     # 7B
-    "llama-2-7b/lpq-64/c4"  : "/export/share/experiments/20230909/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-64.data-True.pth",
-    "llama-2-7b/lpq-64/None": "/export/share/experiments/20230909/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-64.data-False.pth",
-    "llama-2-7b/lora/c4"    : "/export/share/experiments/20230909/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-None.data-True.pth",
-    "llama-2-7b/lora/None"  : "/export/share/experiments/20230909/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-None.data-False.pth",
+    "llama-2-7b/lpq-64/c4"  : "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-64.data-True.pth",
+    "llama-2-7b/lpq-64/None": "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-64.data-False.pth",
+    "llama-2-7b/lora/c4"    : "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-None.data-True.pth",
+    "llama-2-7b/lora/None"  : "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/llama-2-7b-1024.ilp.ranks-None.data-False.pth",
     # 70B
-    "llama-2-70b/lpq-64/c4"  : "/export/share/experiments/20230909/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-64.data-True.pth",
-    "llama-2-70b/lpq-64/None": "/export/share/experiments/20230909/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-64.data-False.pth",
-    "llama-2-70b/lora/c4"    : "/export/share/experiments/20230909/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-None.data-True.pth",
-    "llama-2-70b/lora/None"  : "/export/share/experiments/20230909/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-None.data-False.pth",
+    "llama-2-70b/lpq-64/c4"  : "/home/ubuntu/lq-lora/llama-2/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-64.data-True.pth",
+    "llama-2-70b/lpq-64/None": "/home/ubuntu/lq-lora/llama-2/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-64.data-False.pth",
+    "llama-2-70b/lora/c4"    : "/home/ubuntu/lq-lora/llama-2/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-None.data-True.pth",
+    "llama-2-70b/lora/None"  : "/home/ubuntu/lq-lora/llama-2/ilp_data_bf16/llama-2-70b-1024.ilp.ranks-None.data-False.pth",
 }
 
 
