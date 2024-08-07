@@ -16,22 +16,22 @@ from models.allocation_utils_2 import (
     prepare_model_inputs_for_qconfig_assignments_RoBERTa)
 
 MODEL_PATHS_DICT = {
-    "llama-2-7b": "/export/share3/experiments/20230731/llama-2/Llama-2-7b-hf",
-    "llama-2-13b": "/export/share3/experiments/20230731/llama-2/Llama-2-13b-hf",
-    "llama-2-70b": "/export/share3/experiments/20230731/llama-2/Llama-2-70b-hf",
-    "llama-2-7b-512": "/export/share3/experiments/20230731/llama-2/Llama-2-7b-hf",
-    "llama-2-7b-1024": "/export/share3/experiments/20230731/llama-2/Llama-2-7b-hf",
-    "llama-2-70b-1024": "/export/share3/experiments/20230731/llama-2/Llama-2-70b-hf",
+    "llama-2-7b": "/home/ubuntu/lq-lora/llama-2/Llama-2-7b-hf",
+    "llama-2-13b": "/home/ubuntu/lq-lora/llama-2/Llama-2-13b-hf",
+    "llama-2-70b": "/home/ubuntu/lq-lora/llama-2/Llama-2-70b-hf",
+    "llama-2-7b-512": "/home/ubuntu/lq-lora/llama-2/Llama-2-7b-hf",
+    "llama-2-7b-1024": "/home/ubuntu/lq-lora/llama-2/Llama-2-7b-hf",
+    "llama-2-70b-1024": "/home/ubuntu/lq-lora/llama-2/Llama-2-70b-hf",
 }
 
 INPUTS_PATHS_DICT = {
-    "llama-2-7b": "/export/share/experiments/20230816/fisher_dict_fp32/llama-2-7b.fisher_dict.c4.length-256.nsamples-10000.pth",
-    "llama-2-13b": "/export/share/experiments/20230816/fisher_dict_fp32/llama-2-13b.fisher_dict.c4.length-256.nsamples-10000.pth",
-    "llama-2-70b": "/export/share/experiments/20230816/fisher_dict_bf16/llama-2-70b.fisher_dict.c4.length-256.nsamples-10000.pth",
-    "llama-2-7b-512": "/export/share/experiments/20230906/fisher_dict_fp32/llama-2-7b.fisher_dict.c4.length-512.nsamples-10000.pth",
-    "llama-2-7b-1024": "/export/share/experiments/20230909/fisher_dict_fp32/llama-2-7b.fisher_dict.c4.length-1024.nsamples-10000.pth",
-    "llama-2-70b-1024": "/export/share/experiments/20230909/fisher_dict_bf16/llama-2-70b.fisher_dict.c4.length-1024.nsamples-10000.pth",
-    "roberta-large": "/export/share/experiments/20230923/fisher_dict_fp32/roberta-large.fisher_dict.c4.length-default.nsamples-10000.pth",
+    "llama-2-7b": "/home/ubuntu/lq-lora/fisher_dict_fp32/llama-2-7b.fisher_dict.c4.length-256.nsamples-10000.pth",
+    "llama-2-13b": "/home/ubuntu/lq-lora/fisher_dict_fp32/llama-2-13b.fisher_dict.c4.length-256.nsamples-10000.pth",
+    "llama-2-70b": "/home/ubuntu/lq-lora/fisher_dict_bf16/llama-2-70b.fisher_dict.c4.length-256.nsamples-10000.pth",
+    "llama-2-7b-512": "/home/ubuntu/lq-lora/fisher_dict_fp32/llama-2-7b.fisher_dict.c4.length-512.nsamples-10000.pth",
+    "llama-2-7b-1024": "/home/ubuntu/lq-lora/fisher_dict_fp32/llama-2-7b.fisher_dict.c4.length-1024.nsamples-10000.pth",
+    "llama-2-70b-1024": "/home/ubuntu/lq-lora/fisher_dict_bf16/llama-2-70b.fisher_dict.c4.length-1024.nsamples-10000.pth",
+    "roberta-large": "/home/ubuntu/lq-lora/fisher_dict_fp32/roberta-large.fisher_dict.c4.length-default.nsamples-10000.pth",
 }
 
 
