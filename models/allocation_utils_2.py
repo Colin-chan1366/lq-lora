@@ -171,10 +171,10 @@ def prepare_data_for_qconfig_assignments_RoBERTa(
 
 
 FILE_NAMES_DICT = {
-    "roberta-large/lpq-64/c4"  : "/export/share/experiments/20230923/ilp_data_fp32/roberta-large.ilp.ranks-64.data-True.pth",
-    "roberta-large/lpq-64/None": "/export/share/experiments/20230923/ilp_data_fp32/roberta-large.ilp.ranks-64.data-False.pth",
-    "roberta-large/lora/c4"    : "/export/share/experiments/20230923/ilp_data_fp32/roberta-large.ilp.ranks-None.data-True.pth",
-    "roberta-large/lora/None"  : "/export/share/experiments/20230923/ilp_data_fp32/roberta-large.ilp.ranks-None.data-False.pth",
+    "roberta-large/lpq-64/c4"  : "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/roberta-large.ilp.ranks-64.data-True.pth",
+    "roberta-large/lpq-64/None": "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/roberta-large.ilp.ranks-64.data-False.pth",
+    "roberta-large/lora/c4"    : "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/roberta-large.ilp.ranks-None.data-True.pth",
+    "roberta-large/lora/None"  : "/home/ubuntu/lq-lora/llama-2/ilp_data_fp32/roberta-large.ilp.ranks-None.data-False.pth",
 }
 
 
@@ -210,11 +210,12 @@ def create_qconfig_and_sensitivity_dict_RoBERTa(
     file_name_identifier, budget_identifier = (
         identifier.split(BUDGET_SUBSTRING))
     budget = float(budget_identifier)
-
+    print(f"file_name_identifier:{file_name_identifier}")
     outputs = torch.load(FILE_NAMES_DICT[file_name_identifier])
     names = outputs[0]["names"]
     num_params = outputs[0]["nparams"]
     inputs_path = outputs[0]["inputs_path"]
+    print(f"output:{inputs_path}")
     if inputs_path is not None:
         _sensitivity_dict = torch.load(
             inputs_path,
